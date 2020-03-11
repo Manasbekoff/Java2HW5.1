@@ -9,7 +9,7 @@ public class Main {
         Semaphore sema = new Semaphore(4, true);
         for (int i = 1; i < 101; i++) {
                 Random x = new Random();
-                int random = x.nextInt(3)+1;
+                int random = x.nextInt(4)+1;
                 new Passengers(sema, i, random).start();
             }
         }
